@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: medicios
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: medicios
+
+    spec:
+      containers:
+        - name: medicios
+          image: "gcr.io/cloud-solutions-images/hello-node:1.0.0"
+          ports:
+            - protocol: TCP
+              name: medicios
+              containerPort: 80
