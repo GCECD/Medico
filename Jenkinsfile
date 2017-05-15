@@ -1,7 +1,7 @@
 node {
   def project = 'virajtest-167408'
   def appName = 'medicios'  
-  def imageTag = "gcr.io/${project}/${appName}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
+  def imageTag = "gcr.io/${project}/${appName}:${env.BUILD_NUMBER}"
   
 
   checkout scm
