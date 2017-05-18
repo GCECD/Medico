@@ -3,8 +3,8 @@ node {
 
   stage 'Build image'
 
-  sh("docker build -t  gcr.io/virajtest-167408/medicos:55 .")
-  sh("gcloud docker -- push gcr.io/virajtest-167408/medicos:55")
+  sh("docker build -t  gcr.io/virajtest-167408/medicos:latest .")
+  sh("gcloud docker -- push gcr.io/virajtest-167408/medicos:latest")
 
   stage 'Push image to registry'
   stage 'Deploy Application'
