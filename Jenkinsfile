@@ -5,6 +5,10 @@ node {
 
 
   stage 'Push image to registry'
+  
+  docker build -t  gcr.io/virajtest-167408/medicos:55 .
+
+  gcloud docker -- push gcr.io/virajtest-167408/medicos:55
 
   
   stage 'Deploy Application'
