@@ -3,14 +3,10 @@ node {
 
   stage 'Build image'
 
+  sh("docker build -t  gcr.io/virajtest-167408/medicos:55 .")
+  sh("gcloud docker -- push gcr.io/virajtest-167408/medicos:55")
 
   stage 'Push image to registry'
-  
-  docker build -t  gcr.io/virajtest-167408/medicos:55 .
-
-  gcloud docker -- push gcr.io/virajtest-167408/medicos:55
-
-  
   stage 'Deploy Application'
   sh("kubectl apply -f frontend.yaml")
   sh("kubectl get deployments")
