@@ -1,6 +1,7 @@
 node {
+  
+  
   checkout scm
-
   stage 'Build Stage' 
   stage 'Run Tests'   
   stage 'Build Container Image'   
