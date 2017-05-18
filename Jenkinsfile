@@ -8,8 +8,8 @@ node {
 
   stage 'Push image to registry'
   stage 'Deploy Application'
-  sh("kubectl apply -f frontend.yaml")
-  sh("kubectl get deployments")
-  sh("kubectl get pods")
-  sh("kubectl get services")
+  sh("kubectl --namespace=production apply -f frontend.yaml")
+  sh("kubectl --namespace=production get deployments")
+  sh("kubectl --namespace=production get pods")
+  sh("kubectl  --namespace=production get services")
 }
