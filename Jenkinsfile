@@ -9,4 +9,7 @@ node {
   
   stage 'Deploy Application'
   sh("kubectl apply -f frontend.yaml")
+  sh("kubectl get deployments")
+  sh("kubectl get pods")
+  sh("kubectl get services")
 }
