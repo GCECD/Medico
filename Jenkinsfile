@@ -5,14 +5,17 @@ node {
   def imageTag = "gcr.io/${project}/${appName}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
   
   checkout scm
-  stage 'Build Stage' 
-  stage 'Run Tests'   
+  stage 'Dev Deployment'
+  stage 'Dev Testing' 
+  
+  stage 'UAT Deployment' 
+  stage 'UAT Testing' 
+  
+  stage 'Production Deployment - Build Container Image(Docker)'   
   sh("docker build -t ${imageTag} .")
 
-  stage 'Deploy image to Cloud registry'
-  sh("gcloud docker push ${imageTag}")
-  
-
+  stage 'Production Deployment - Deploy Image to Cloud registry' 
+  sh("gcloud docker push ${imageTag}") 
  
   stage 'Deploy Application as a Microservice(kubernetes on GCP)'
 /*  sh("kubectl --namespace=production get deployments")
