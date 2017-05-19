@@ -3,6 +3,12 @@
 #2 color = #3fbbc0;
 */
 
+var(--main-bg-color)
+:root {
+  --main-bg-color: #3fbbc0;
+}
+
+
 a:hover,
 a:focus {
     color: #4ACCD1;
@@ -38,18 +44,18 @@ a:focus {
 
 /* top */
 .top-area {
-	background: #3fbbc0;
+	background: var(--main-bg-color);
 }
 
 /* menu */
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	color: #3fbbc0;
+	color: var(--main-bg-color);
 }
 .navbar-custom.top-nav-collapse .nav li a:hover,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li.active a,.navbar-custom.top-nav-collapse .nav li.active a  {
-    color: #3fbbc0;
+    color: var(--main-bg-color);
 }
 
 
@@ -72,7 +78,7 @@ a:focus {
 
 /* pricing box  */
 .pricing-content.featured h2,.pricing-content.featured .price-bottom {
-	background-color:#3fbbc0;
+	background-color:var(--main-bg-color);
 }
 .pricing-content.featured h3 {
 	background:#4ACCD1;
@@ -82,7 +88,7 @@ a:focus {
 
 /* team */
 .cbp-l-grid-team-name {
-    color: #3fbbc0;
+    color: var(--main-bg-color);
 }
 
 .cbp-l-filters-button .cbp-filter-counter {
@@ -112,9 +118,9 @@ a:focus {
 .cbp-l-caption-buttonLeft:hover,
 .cbp-l-caption-buttonRight:hover {
     /* @editable properties */
-    background-color: #3fbbc0;
+    background-color: var(--main-bg-color);
 }
 
 .form-control:focus {
-  border-color: #3fbbc0;
+  border-color: var(--main-bg-color);
 }
