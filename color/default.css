@@ -1,11 +1,12 @@
 /*
 #1 color = #4ACCD1;
-#2 color = #3fbbc0;
+#2 color = #F0E68C;
 */
-
-var(--main-bg-color)
+/*
+#F0E68C
+*/
 :root {
-  --main-bg-color: #EEE9AA; /* EEE8AA */
+  --main-bg-color: #F0E68C;
 }
 
 
@@ -44,18 +45,18 @@ a:focus {
 
 /* top */
 .top-area {
-	background: var(--main-bg-color);
+	background: #F0E68C;
 }
 
 /* menu */
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	color: var(--main-bg-color);
+	color: #F0E68C;
 }
 .navbar-custom.top-nav-collapse .nav li a:hover,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li.active a,.navbar-custom.top-nav-collapse .nav li.active a  {
-    color: var(--main-bg-color);
+    color: #F0E68C;
 }
 
 
@@ -78,7 +79,7 @@ a:focus {
 
 /* pricing box  */
 .pricing-content.featured h2,.pricing-content.featured .price-bottom {
-	background-color:var(--main-bg-color);
+	background-color:#F0E68C;
 }
 .pricing-content.featured h3 {
 	background:#4ACCD1;
@@ -88,7 +89,7 @@ a:focus {
 
 /* team */
 .cbp-l-grid-team-name {
-    color: var(--main-bg-color);
+    color: #F0E68C;
 }
 
 .cbp-l-filters-button .cbp-filter-counter {
@@ -118,9 +119,9 @@ a:focus {
 .cbp-l-caption-buttonLeft:hover,
 .cbp-l-caption-buttonRight:hover {
     /* @editable properties */
-    background-color: var(--main-bg-color);
+    background-color: #F0E68C;
 }
 
 .form-control:focus {
-  border-color: var(--main-bg-color);
+  border-color: #F0E68C;
 }
