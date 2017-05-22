@@ -11,13 +11,13 @@ node {
   stage 'UAT Deployment' 
   stage 'UAT Testing' 
   
-  stage 'Production Deployment - Build Container Image(Docker)'   
+  stage 'Production Build - Build Container image and Push in GCP Registry'   
   sh("docker build -t ${imageTag} .")
 
-  stage 'Production Deployment - Deploy Image to Cloud registry' 
+  stage 'Production Deployment' 
   sh("gcloud docker push ${imageTag}") 
  
-  stage 'Deploy Application as a Microservice(kubernetes on GCP)'
+  stage 'Production Deployment(Deploy Application as a Microservice(Kubernetes on GCP))'
 /*  sh("kubectl --namespace=production get deployments")
   sh("kubectl --namespace=production get pods")
   sh("kubectl  --namespace=production get services")
