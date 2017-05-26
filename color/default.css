@@ -1,12 +1,14 @@
 /*
 #1 color = #4ACCD1;
 #2 color = #F0E68C;
+
+#9ACD32
 */
 /*
 #3fbbc0
 */
 :root {
-  --main-bg-color: #F0E68C;
+  --main-bg-color: #3fbbc0;
 }
 
 
@@ -45,18 +47,18 @@ a:focus {
 
 /* top */
 .top-area {
-	background: #F0E68C;
+	background: #3fbbc0;
 }
 
 /* menu */
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	color: #F0E68C;
+	color: #3fbbc0;
 }
 .navbar-custom.top-nav-collapse .nav li a:hover,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li.active a,.navbar-custom.top-nav-collapse .nav li.active a  {
-    color: #F0E68C;
+    color: #3fbbc0;
 }
 
 
@@ -79,7 +81,7 @@ a:focus {
 
 /* pricing box  */
 .pricing-content.featured h2,.pricing-content.featured .price-bottom {
-	background-color:#F0E68C;
+	background-color:#3fbbc0;
 }
 .pricing-content.featured h3 {
 	background:#4ACCD1;
@@ -89,7 +91,7 @@ a:focus {
 
 /* team */
 .cbp-l-grid-team-name {
-    color: #F0E68C;
+    color: #3fbbc0;
 }
 
 .cbp-l-filters-button .cbp-filter-counter {
@@ -119,9 +121,9 @@ a:focus {
 .cbp-l-caption-buttonLeft:hover,
 .cbp-l-caption-buttonRight:hover {
     /* @editable properties */
-    background-color: #F0E68C;
+    background-color: #3fbbc0;
 }
 
 .form-control:focus {
-  border-color: #F0E68C;
+  border-color: #3fbbc0;
 }
